@@ -1,48 +1,19 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    // File Layout
+    "target": "ES2022" /* Define la versión de JavaScript a la que se compila. */,
+    "module": "NodeNext" /* Genera código de módulos compatible con Node.js moderno. */,
+    "moduleResolution": "NodeNext" /* Usa el método de resolución de módulos moderno de Node.js. */,
+    "outDir": "./dist" /* Carpeta de salida para los archivos compilados. */,
     "rootDir": "./src",
-    "outDir": "./dist",
-
-    // Environment Settings
-    // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
-    "target": "ES2020",
-    "types": [],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
-    // and npm install -D @types/node,
     "esModuleInterop": true,
+    "strict": true /* Habilita todas las comprobaciones de tipo estrictas. */,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
-
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
     "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*"
+  ] /* Incluye todos los archivos dentro de la carpeta 'src'. */,
+  "exclude": [
+    "node_modules"
+  ] /* Excluye la carpeta de dependencias de la compilación. */
 }
