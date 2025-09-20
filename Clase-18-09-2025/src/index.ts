@@ -1,7 +1,10 @@
 import type { Application, Request, Response } from "express";
 import express from "express";
+import dotenv from "dotenv";
 
-const PORT: number = 3000; // Tipo explícito para el puerto
+dotenv.config();
+
+const PORT = process.env.PORT || 3000;
 const app: Application = express(); // Tipo explícito para la aplicación de Express
 const router = express.Router(); // Usamos express para crear el router
 
