@@ -1,0 +1,8 @@
+CONSULTORIO TÉCNICO - ESTRUCTURA DE DATOS
+Proyecto: Navegador Web en Consola
+User Stories:
+- guardar las pestañas que se abren (sin DB)
+- guardar el historial de páginas que se van abriendo
+- pre carga de páginas
+- guardar páginas relacionadas
+
